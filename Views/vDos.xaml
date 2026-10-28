@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fushcasinaRepasoA.Views.vDos"
+             Title="vDos">
+
+    <VerticalStackLayout
+        Spacing="20">
+        <Label
+            Text="Datos del estudiante"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+        <Grid
+            RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="DESARROLLADO POR"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtDesarrollador"
+                   Placeholder="Ingresa tu nombre"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Label Text="Nivel"
+        Grid.Row="0"
+        Grid.Column="1"/>
+             <Entry x:Name="txtNivel"
+        Placeholder="Ingresa tu nivel"
+        Grid.Row="1"
+        Grid.Column="1"/>
+
+
+            <Label Text="Asignatura"
+        Grid.Row="0"
+        Grid.Column="2"/>
+            <Entry x:Name="txtAsignatura"
+        Placeholder="Ingresa tu asignatura"
+        Grid.Row="1"
+        Grid.Column="2"/>
+        </Grid>
+
+        <Label Text="CALIFICACIONES"
+               FontSize="20"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nota de seguimimiento"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtNota"
+                   Placeholder="Ingrese nota del seguimiento"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+
+            <Label Text="Nota examen"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtExamen"
+                   Placeholder="Ingresa el examen"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+        </Grid>
+
+        <Button x:Name="btnReporte"
+                Text="Reporte"
+                Clicked="btnReporte_Clicked"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

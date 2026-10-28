@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fushcasinaRepasoA.Views.vUno"
+             Title="vUno">
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+        <Label
+            Text="REPASO"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+        <Image Source="dotnet_bot.png"
+               WidthRequest="200"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition>
+                    
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Ingresa el usuario"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+            
+            <Label Text="CONTRASEÑA"
+                   Grid.Row="0"
+                   Grid.Column="2"/>
+
+            <Entry x:Name="txtContraseña"
+                   Placeholder="Ingresa la contraseña"
+                   IsPassword="True"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+        </Grid>
+
+        <Button x:Name="btnAbrir"
+                Text="Abrir page 2"
+                Clicked="btnAbrir_Clicked"/>
+        
+
+    </VerticalStackLayout>
+
+</ContentPage>
