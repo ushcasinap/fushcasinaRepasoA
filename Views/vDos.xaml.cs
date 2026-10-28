@@ -2,14 +2,22 @@ namespace fushcasinaRepasoA.Views;
 
 public partial class vDos : ContentPage
 {
-	public vDos(String usuario)
-	{
-		InitializeComponent();
-		DisplayAlertAsync("Alerta", "Bienvenido" + usuario, "ok");
-	}
-
-    private void btnReporte_Clicked(object sender, EventArgs e)
+    public vDos(string usuario)
     {
-		Navigation.PushAsync(new Views.vTres(txtDesarrollador.Text, txtAsignatura.Text, txtNivel.Text, txtNota.Text, txtExamen.Text));
+        InitializeComponent();
+
+        DisplayAlertAsync("Alerta", "Bienvenido " + usuario, "OK");
+    }
+
+    private async void btnReporte_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(
+            new Views.vTres(
+                txtDesarrollador.Text,
+                txtAsignatura.Text,
+                txtNivel.Text,
+                txtExamen.Text,
+                txtNota.Text
+            ));
     }
 }

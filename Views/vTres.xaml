@@ -49,6 +49,7 @@
 
 
         <Label Text="Nora final p1"
+               Style="{StaticResource LabelGlobal}"
        Grid.Row="3"
        Grid.Column="0"/>
         <Entry x:Name="txtFinal"

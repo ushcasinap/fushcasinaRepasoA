@@ -2,13 +2,13 @@ namespace fushcasinaRepasoA.Views;
 
 public partial class vUno : ContentPage
 {
-	public vUno()
-	{
-		InitializeComponent();
-	}
+    public vUno()
+    {
+        InitializeComponent();
+    }
 
     private void btnAbrir_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new Views.vDos());
+        Navigation.PushAsync(new Views.vDos());
     }
 }

@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fushcasinaRepasoA.Views.vUno"
              Title="vUno">
+    <ContentPage.Resources>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="Blue"/>
+    </ContentPage.Resources>
 
     <VerticalStackLayout
         Padding="20"
@@ -25,9 +30,14 @@
                     
                 </ColumnDefinition>
             </Grid.ColumnDefinitions>
+            
+            <Label Text="Usuario"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Style="{StaticResource LabelStyle}"/>
             <Label Text="USUARIO"
                    Grid.Row="0"
-                   Grid.Column="0"/>
+                />
 
             <Entry x:Name="txtUsuario"
                    Placeholder="Ingresa el usuario"
